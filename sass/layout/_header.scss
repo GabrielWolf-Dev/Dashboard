@@ -1,0 +1,59 @@
+header {
+    width: 100%;
+    background-color: $white;
+    border-bottom: 1px solid $gray-light;
+    display: flex;
+    grid-area: header;
+
+    .side-1 {
+        width: 50%;
+        border-right: 1px solid $gray-light;
+        text-align: right;
+        padding: 24px 2%;
+        
+        address {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .side-2 {
+        width: 50%;
+        padding: 24px 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn-notification {
+            @include btnRec($pink-light, $red-low-opacity);
+            @extend .resetBtn;
+            position: relative;
+            font-size: 16px;
+
+            .num-notification {
+                position: absolute;
+                top: -4px;
+                right: -4px;
+                background-color: $pink-light;
+                color: $white;
+                padding: 2px 4px;
+                border-radius: 2px;
+                font-size: 8px;
+            }
+        }
+
+        .btn-search {
+            @include btnRec($white, $gray-light);
+            @extend .resetBtn;
+        }
+    }
+
+    address {
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+    
+}

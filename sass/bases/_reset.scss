@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*-- Colors --*/
+
+$black: #26282D;
+$black-light: #2D3035;
+$white: #FFFF;
+$purple: #7F41D9;
+$red-low-opacity: #FBEDEF;
+$pink-light: #ED7387;
+$gray: #7F7F7F;
+$gray-light: #B2B2B2;
+$gray-dark: #717171;
+$bg-dash: #FAF9FC;

@@ -1,0 +1,9 @@
+@mixin btnRec($colorP, $colorS) {
+    width: 42px;
+    height: 42px;
+    background-color: $colorS;
+    color: $colorP;
+    border-radius: 6px;
+    display: inline-block;
+    margin:  0 8px -4px 0;
+}

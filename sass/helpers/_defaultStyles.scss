@@ -1,0 +1,14 @@
+.container-grid {
+    display: grid;
+    grid-template-areas:
+    "sidenav header header"
+    "sidenav main updates";
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 80px 1fr;
+}
+
+.resetBtn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
