@@ -7,6 +7,20 @@
     grid-template-rows: 80px 1fr;
 }
 
+.title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $gray-dark;
+    padding: 16px 1%;
+}
+
+.paragraph {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $gray-light;
+    padding: 8px 0;
+}
+
 .resetBtn {
     border: 0;
     background-color: transparent;

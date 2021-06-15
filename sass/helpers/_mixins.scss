@@ -4,6 +4,24 @@
     background-color: $colorS;
     color: $colorP;
     border-radius: 6px;
-    display: inline-block;
-    margin:  0 8px -4px 0;
+    margin: 0 8px -4px 0;
+}
+
+@mixin btn($width, $bgcolor, $border-radius) {
+    width: $width;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    background-color: $bgcolor;
+    border-radius: $border-radius;
+}
+
+@mixin box($width) {
+    width: $width;
+    border-radius: 12px;
+    border: 2px solid $border-box;
+    background-color: $white;
+    padding: 16px;
+    margin: 32px 0;
 }

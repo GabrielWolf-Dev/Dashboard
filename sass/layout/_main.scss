@@ -1,3 +1,89 @@
 main {
+    width: 70%;
+    height: calc(100vh - 80px);
+    padding: 32px 2%;
     grid-area: main;
+    background-color: $bg-dash;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $gray-light;
+        border-radius: 12px;
+    }
+
+    .welcome {
+        @include box(100%);
+    }
+
+    .options-dash {
+        @include box(100%);
+
+        button {
+            @include btn(auto, $gray, 25px);
+            margin: 16px 4px;
+            padding: 0 8px;
+        }
+    }
+
+    form {
+        @include box(45%);
+        margin-right: 24px;
+        text-align: center;
+        display: inline-block;
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            height: 42px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid $border-box;
+            padding-left: 12px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            resize: none;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid $border-box;
+            padding: 12px;
+        }
+
+        input[type="submit"] {
+            width: 120px;
+            height: 42px;
+            color: $white;
+            background-color: $gray;
+            cursor: pointer;
+            border: 0;
+            border-radius: 12px;
+        }
+    }
+
+    .tickets {
+        @include box(45%);
+        display: inline-block;
+
+        .ticket:first-child {
+            border-bottom: 1px solid $gray-light;
+        }
+
+        .ticket {
+
+            .paragraph > strong {
+                text-decoration: underline;
+            }
+    
+            button {
+                @include btn(auto, $gray, 18px);
+                margin: 16px 2%;
+                padding: 0 10px;
+            }
+        }
+    }
 }
