@@ -1,10 +1,13 @@
-main {
-    width: 70%;
+.main {
+    width: 100%;
     height: calc(100vh - 80px);
     padding: 32px 2%;
     grid-area: main;
     background-color: $bg-dash;
     overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 
     &::-webkit-scrollbar {
         width: 8px;
@@ -17,10 +20,12 @@ main {
 
     .welcome {
         @include box(100%);
+        grid-column: span 3;
     }
 
     .options-dash {
         @include box(100%);
+        grid-column: span 3;
 
         button {
             @include btn(auto, $gray, 25px);
@@ -30,10 +35,8 @@ main {
     }
 
     form {
-        @include box(45%);
-        margin-right: 24px;
-        text-align: center;
-        display: inline-block;
+        @include box(90%);
+        text-align: left;
 
         input[type="text"], input[type="email"] {
             width: 100%;
@@ -66,8 +69,7 @@ main {
     }
 
     .tickets {
-        @include box(45%);
-        display: inline-block;
+        @include box(90%);
 
         .ticket:first-child {
             border-bottom: 1px solid $gray-light;

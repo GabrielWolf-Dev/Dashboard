@@ -1,3 +1,57 @@
 .updates {
+    width: 100%;
+    height: calc(100vh - 80px);
     grid-area: updates;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $gray-light;
+        border-radius: 12px;
+    }
+
+    header {
+        width: 100%;
+        padding: 32px 16px 16px 16px;
+    }
+
+    .last-updates {
+        margin-top: 48px;
+        margin-left: 24px;
+        border-left: 1px solid $gray;
+
+        article {
+            position: relative;
+            padding: 32px;
+
+            h3 {
+                font-size: 1.45rem;
+                color: $gray-dark;
+            }
+
+            h4 {
+                font-size: 1.35rem;
+                color: $gray-light;
+                margin-bottom: 16px;
+            }
+
+            p {
+                @extend .paragraph;
+                font-size: 1.25rem;
+            }
+
+            .circle {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: $gray-dark;
+                position: absolute;
+                top: 0;
+                left: -13px;
+            }
+        }
+    }
 }
